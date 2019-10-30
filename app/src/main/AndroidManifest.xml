@@ -15,7 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".TextRecognition">
+        <activity android:name=".TextResult"
+            android:parentActivityName=".TextRecognition">
+
+        </activity>
+        <activity android:name=".TextRecognition"
+            android:parentActivityName=".MainActivity">
 
         </activity>
 
