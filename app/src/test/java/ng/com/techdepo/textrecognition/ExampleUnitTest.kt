@@ -1,4 +1,4 @@
-package ng.com.techdepo.textrecongnition
+package ng.com.techdepo.textrecognition
 
 import org.junit.Test
 

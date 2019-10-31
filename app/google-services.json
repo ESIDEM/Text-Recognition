@@ -8,17 +8,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:905076582068:android:331e1664f59bcdb35059e1",
+        "mobilesdk_app_id": "1:905076582068:android:e660812f58bc252e5059e1",
         "android_client_info": {
-          "package_name": "ng.com.techdepo.textrecongnition"
+          "package_name": "ng.com.techdepo.textrecognition"
         }
       },
       "oauth_client": [
         {
-          "client_id": "905076582068-v3qdpaemdnn6jrrltgoc61s61rok3msk.apps.googleusercontent.com",
+          "client_id": "905076582068-vlat81j0c7e6rli89sq4b7q1i7df7pv3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "ng.com.techdepo.textrecongnition",
+            "package_name": "ng.com.techdepo.textrecognition",
             "certificate_hash": "6f300fcc3b82b82eb4e129b92d0343c68511a93b"
           }
         },

@@ -1,4 +1,4 @@
-package ng.com.techdepo.textrecongnition
+package ng.com.techdepo.textrecognition
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

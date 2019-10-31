@@ -1,4 +1,4 @@
-package ng.com.techdepo.textrecongnition
+package ng.com.techdepo.textrecognition
 
 
 import android.app.Activity
@@ -92,38 +92,6 @@ class TextRecognition : AppCompatActivity() {
             }catch (e:NullPointerException){
             e.printStackTrace()
         }
-
-
-//        if (requestCode==CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE){
-//
-//            val result = CropImage.getActivityResult(data)
-//            capturedImage.setImageURI(result.uri)
-//            if (
-//                capturedImage.drawable!=null
-//            ){
-//                placeHolderImage.visibility = View.GONE
-//                process_button.visibility = View.VISIBLE
-//            }else{
-//
-//                placeHolderImage.visibility = View.VISIBLE
-//                process_button.visibility = View.GONE
-//            }
-//        }
-//        else if (
-//            resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE
-//        ){
-//            if (
-//                capturedImage.drawable!=null
-//            ){
-//                placeHolderImage.visibility = View.GONE
-//                process_button.visibility = View.VISIBLE
-//            }else{
-//
-//                placeHolderImage.visibility = View.VISIBLE
-//                process_button.visibility = View.GONE
-//            }
-//            Toast.makeText(this,"Please select an Image",Toast.LENGTH_LONG).show()
-//        }
 
     }
 

@@ -1,4 +1,4 @@
-package ng.com.techdepo.textrecongnition
+package ng.com.techdepo.textrecognition
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="ng.com.techdepo.textrecongnition">
+    package="ng.com.techdepo.textrecognition">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -15,12 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".TextResult"
-            android:parentActivityName=".TextRecognition">
+        <activity android:name="ng.com.techdepo.textrecognition.TextResult"
+            android:parentActivityName="ng.com.techdepo.textrecognition.TextRecognition">
 
         </activity>
-        <activity android:name=".TextRecognition"
-            android:parentActivityName=".MainActivity">
+        <activity android:name="ng.com.techdepo.textrecognition.TextRecognition"
+            android:parentActivityName="ng.com.techdepo.textrecognition.MainActivity">
 
         </activity>
 
@@ -31,7 +31,7 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name="ng.com.techdepo.textrecognition.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
