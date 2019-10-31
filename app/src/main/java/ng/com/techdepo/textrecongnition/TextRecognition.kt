@@ -1,6 +1,7 @@
 package ng.com.techdepo.textrecongnition
 
 
+import android.app.Activity
 import android.content.Intent
 import android.graphics.drawable.BitmapDrawable
 import androidx.appcompat.app.AppCompatActivity
@@ -44,36 +45,85 @@ class TextRecognition : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        if (requestCode==CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE){
+        try {
+            when(resultCode){
+                Activity.RESULT_CANCELED ->{
+                    Toast.makeText(this, "Image not Selected", Toast.LENGTH_SHORT).show()
+                }
 
-            val result = CropImage.getActivityResult(data)
-            capturedImage.setImageURI(result.uri)
-            if (
-                capturedImage.drawable!=null
-            ){
-                placeHolderImage.visibility = View.GONE
-                process_button.visibility = View.VISIBLE
-            }else{
+                Activity.RESULT_OK->{
 
-                placeHolderImage.visibility = View.VISIBLE
-                process_button.visibility = View.GONE
-            }
+                    when(requestCode){
+
+                        CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE ->{
+                            val result = CropImage.getActivityResult(data)
+                            capturedImage.setImageURI(result.uri)
+                            if (
+                                capturedImage.drawable!=null
+                            ){
+                                placeHolderImage.visibility = View.GONE
+                                process_button.visibility = View.VISIBLE
+                            }else{
+
+                                placeHolderImage.visibility = View.VISIBLE
+                                process_button.visibility = View.GONE
+                            }
+                        }
+
+                        CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE->{
+
+                            if (
+                                capturedImage.drawable!=null
+                            ){
+                                placeHolderImage.visibility = View.GONE
+                                process_button.visibility = View.VISIBLE
+                            }else{
+
+                                placeHolderImage.visibility = View.VISIBLE
+                                process_button.visibility = View.GONE
+                            }
+                            Toast.makeText(this,"Please select an Image",Toast.LENGTH_LONG).show()
+
+                        }
+
+                    }
+                }
+                }
+            }catch (e:NullPointerException){
+            e.printStackTrace()
         }
-        else if (
-            resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE
-        ){
-            if (
-                capturedImage.drawable!=null
-            ){
-                placeHolderImage.visibility = View.GONE
-                process_button.visibility = View.VISIBLE
-            }else{
 
-                placeHolderImage.visibility = View.VISIBLE
-                process_button.visibility = View.GONE
-            }
-            Toast.makeText(this,"Please select an Image",Toast.LENGTH_LONG).show()
-        }
+
+//        if (requestCode==CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE){
+//
+//            val result = CropImage.getActivityResult(data)
+//            capturedImage.setImageURI(result.uri)
+//            if (
+//                capturedImage.drawable!=null
+//            ){
+//                placeHolderImage.visibility = View.GONE
+//                process_button.visibility = View.VISIBLE
+//            }else{
+//
+//                placeHolderImage.visibility = View.VISIBLE
+//                process_button.visibility = View.GONE
+//            }
+//        }
+//        else if (
+//            resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE
+//        ){
+//            if (
+//                capturedImage.drawable!=null
+//            ){
+//                placeHolderImage.visibility = View.GONE
+//                process_button.visibility = View.VISIBLE
+//            }else{
+//
+//                placeHolderImage.visibility = View.VISIBLE
+//                process_button.visibility = View.GONE
+//            }
+//            Toast.makeText(this,"Please select an Image",Toast.LENGTH_LONG).show()
+//        }
 
     }
 
