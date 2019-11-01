@@ -17,6 +17,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,TextRecognition::class.java))
         }
 
+        bar_code.setOnClickListener {
+
+            startActivity(Intent(this, BarCodeScaner::class.java))
+        }
+
     }
 
 

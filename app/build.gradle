@@ -34,6 +34,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.google.android.material:material:1.2.0-alpha01'
+    implementation 'me.dm7.barcodescanner:zxing:1.9.13'
     //Permissions
     implementation 'com.nabinbhandari.android:permissions:3.8'
 //Image Cropping

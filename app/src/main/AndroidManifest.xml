@@ -15,12 +15,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="ng.com.techdepo.textrecognition.TextResult"
-            android:parentActivityName="ng.com.techdepo.textrecognition.TextRecognition">
+        <activity android:name=".BarCodeScaner"
+            android:parentActivityName=".MainActivity">
 
         </activity>
-        <activity android:name="ng.com.techdepo.textrecognition.TextRecognition"
-            android:parentActivityName="ng.com.techdepo.textrecognition.MainActivity">
+        <activity
+            android:name=".TextResult"
+            android:parentActivityName=".TextRecognition">
+
+        </activity>
+        <activity
+            android:name=".TextRecognition"
+            android:parentActivityName=".MainActivity">
 
         </activity>
 
@@ -31,7 +37,7 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name="ng.com.techdepo.textrecognition.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
