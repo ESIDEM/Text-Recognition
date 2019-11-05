@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportActionBar!!.title="Scan! Copy! Recognize"
+        supportActionBar!!.title=getString(R.string.app_name)
 
         copy.setOnClickListener {
             startActivity(Intent(this,TextRecognition::class.java))

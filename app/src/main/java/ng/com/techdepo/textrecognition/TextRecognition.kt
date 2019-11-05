@@ -19,7 +19,7 @@ class TextRecognition : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_text_recognition)
-
+        supportActionBar!!.title = "Copy text from an Image"
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         fab.setOnClickListener {

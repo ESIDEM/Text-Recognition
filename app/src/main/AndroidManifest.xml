@@ -15,22 +15,28 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".DeveloperProfile"
-            android:parentActivityName=".MainActivity">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
-            android:name=".ImageRecognition"
+            android:name=".DeveloperProfile"
             android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".ImageRecognition"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".BarCodeScaner"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".TextResult"
-            android:parentActivityName=".TextRecognition"></activity>
+            android:parentActivityName=".TextRecognition" />
         <activity
             android:name=".TextRecognition"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
 
         <meta-data
             android:name="com.google.firebase.ml.vision.DEPENDENCIES"
@@ -40,11 +46,7 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"

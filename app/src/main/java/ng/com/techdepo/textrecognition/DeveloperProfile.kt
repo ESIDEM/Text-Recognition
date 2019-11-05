@@ -10,5 +10,6 @@ class DeveloperProfile : AppCompatActivity() {
         setContentView(R.layout.profile_page)
         supportActionBar!!.title = "Developer's Profile"
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.elevation= 0.0F
     }
 }

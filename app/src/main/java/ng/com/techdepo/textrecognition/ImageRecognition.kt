@@ -19,7 +19,7 @@ class ImageRecognition : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_image_recognition)
-
+        supportActionBar!!.title = "Image Recognition"
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         fab_image.setOnClickListener {
