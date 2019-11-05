@@ -15,7 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".BarCodeScaner"
+        <activity android:name=".ImageRecognition"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".BarCodeScaner"
             android:parentActivityName=".MainActivity">
 
         </activity>

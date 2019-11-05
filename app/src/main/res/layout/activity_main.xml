@@ -12,20 +12,36 @@
        android:id="@+id/text_recognition"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
+       android:text="Text Recognition"
        app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.486"
        app:layout_constraintStart_toStartOf="parent"
-       android:text="Text Recognition"/>
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.295" />
 
    <Button
        android:id="@+id/bar_code"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
+       android:text="Scan Barcode"
        app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="@id/text_recognition"
+       app:layout_constraintVertical_bias="0.274" />
+
+   <Button
+       android:id="@+id/image_recognition"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Image recognition"
+       app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="parent"
-       android:text="Scan Barcode"/>
+       app:layout_constraintTop_toBottomOf="@+id/bar_code"
+       app:layout_constraintVertical_bias="0.191" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

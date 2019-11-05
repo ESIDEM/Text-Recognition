@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, BarCodeScaner::class.java))
         }
 
+        image_recognition.setOnClickListener {
+            startActivity(Intent(this, ImageRecognition::class.java))
+        }
+
     }
 
 
