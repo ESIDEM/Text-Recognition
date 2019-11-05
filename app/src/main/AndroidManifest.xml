@@ -15,25 +15,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ImageRecognition"
+        <activity android:name=".DeveloperProfile"
             android:parentActivityName=".MainActivity">
 
         </activity>
+        <activity
+            android:name=".ImageRecognition"
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".BarCodeScaner"
-            android:parentActivityName=".MainActivity">
-
-        </activity>
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".TextResult"
-            android:parentActivityName=".TextRecognition">
-
-        </activity>
+            android:parentActivityName=".TextRecognition"></activity>
         <activity
             android:name=".TextRecognition"
-            android:parentActivityName=".MainActivity">
-
-        </activity>
+            android:parentActivityName=".MainActivity"></activity>
 
         <meta-data
             android:name="com.google.firebase.ml.vision.DEPENDENCIES"

@@ -1,47 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@color/grey"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
-   <Button
-       android:id="@+id/text_recognition"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Text Recognition"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.486"
+   <androidx.cardview.widget.CardView
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:id="@+id/scan_card"
+       android:layout_marginStart="16dp"
+       android:layout_marginLeft="16dp"
+       android:layout_marginTop="16dp"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.295" />
+       app:cardCornerRadius="6dp"
+       app:cardElevation="4dp">
 
-   <Button
-       android:id="@+id/bar_code"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Scan Barcode"
-       app:layout_constraintBottom_toBottomOf="parent"
+   <ImageView
+       android:id="@+id/scan"
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:src="@drawable/scan"
+       android:scaleType="centerCrop"
+      />
+   </androidx.cardview.widget.CardView>
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:id="@+id/copy_card"
+       android:layout_marginTop="16dp"
+       android:layout_marginEnd="16dp"
+       android:layout_marginRight="16dp"
+       app:layout_constraintBottom_toBottomOf="@id/scan_card"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.498"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="@id/text_recognition"
-       app:layout_constraintVertical_bias="0.274" />
+       app:layout_constraintHorizontal_bias="0.642"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.0"
+       app:cardCornerRadius="6dp"
+       app:cardElevation="4dp">
 
-   <Button
-       android:id="@+id/image_recognition"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Image recognition"
-       app:layout_constraintBottom_toBottomOf="parent"
+   <ImageView
+       android:id="@+id/copy"
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:src="@drawable/copy"
+       android:scaleType="centerCrop"
+        />
+   </androidx.cardview.widget.CardView>
+   <androidx.cardview.widget.CardView
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:id="@+id/recognize_card"
+       android:layout_marginTop="16dp"
+       android:layout_marginEnd="16dp"
+       android:layout_marginRight="16dp"
+       android:layout_marginLeft="16dp"
+       android:layout_marginStart="16dp"
+       app:layout_constraintTop_toBottomOf="@id/scan_card"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintHorizontal_bias="0.642"
+       app:layout_constraintVertical_bias="0.0"
+       app:cardCornerRadius="6dp"
+       app:cardElevation="4dp">
+
+   <ImageView
+       android:id="@+id/recognize"
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:scaleType="centerCrop"
+       android:src="@drawable/recognize"
+
+       />
+   </androidx.cardview.widget.CardView>
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:id="@+id/rate_card"
+       android:layout_marginTop="16dp"
+       android:layout_marginEnd="16dp"
+       android:layout_marginRight="16dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.642"
+       app:layout_constraintTop_toBottomOf="@id/copy_card"
+       app:layout_constraintVertical_bias="0.0"
+       app:cardCornerRadius="6dp"
+       app:cardElevation="4dp">
+
+   <ImageView
+       android:id="@+id/rate"
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:src="@drawable/rate"
+       android:scaleType="centerCrop"
+        />
+   </androidx.cardview.widget.CardView>
+   <androidx.cardview.widget.CardView
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:id="@+id/dev_card"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/bar_code"
-       app:layout_constraintVertical_bias="0.191" />
-
-
+       app:layout_constraintTop_toBottomOf="@id/recognize_card"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintVertical_bias="0.0"
+       android:layout_marginTop="16dp"
+       android:layout_marginEnd="16dp"
+       android:layout_marginRight="16dp"
+       app:cardCornerRadius="6dp"
+       app:cardElevation="4dp">
+   <ImageView
+       android:id="@+id/dev"
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:src="@drawable/dev"
+       android:scaleType="centerCrop"
+       />
+   </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
