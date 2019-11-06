@@ -61,7 +61,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_pics"
-        android:text="Sam Esidem"
+        android:text="@string/sam_esidem"
         android:textColor="#424242"
         android:textSize="21sp"
         android:textStyle="bold" />
@@ -74,7 +74,7 @@
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/name_text"
-        android:text="Android Developer"
+        android:text="@string/android_developer"
         android:textSize="14sp" />
     <LinearLayout
         android:id="@+id/info_top"
@@ -99,7 +99,7 @@
             android:fontFamily="@font/roboto"
             android:gravity="center"
             android:padding="13dp"
-            android:text="Developer's Info"
+            android:text="@string/developer_s_info"
             android:textAllCaps="true"
             android:textColor="@color/blue"
             android:textSize="14sp"
@@ -184,7 +184,7 @@
                     android:layout_marginTop="16dp"
                     app:layout_constraintTop_toBottomOf="@id/contact"
                     app:layout_constraintStart_toEndOf="@id/phone_icon"
-                    android:text="2348061304970"
+                    android:text="@string/_2348061304970"
                     android:textSize="15sp"
                     android:textColor="@color/goodgrey"
                     android:fontFamily="@font/roboto"
@@ -208,7 +208,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="8dp"
                     android:textColor="@color/goodgrey"
-                    android:text="samesidem@gmail.com"
+                    android:text="@string/samesidem_gmail_com"
                     android:textSize="15sp"
                     android:fontFamily="@font/roboto"
                     android:layout_marginStart="20dp" />
@@ -231,11 +231,76 @@
                     app:layout_constraintStart_toEndOf="@id/location_icon"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="8dp"
-                    android:text="Uyo, Nigeria"
+                    android:text="@string/uyo_nigeria"
                     android:textSize="15sp"
                     android:textColor="@color/goodgrey"
                     android:fontFamily="@font/roboto"
                     android:layout_marginStart="20dp" />
+
+        <ImageView
+            android:id="@+id/twitter_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@id/location_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/twitter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/location_icon"
+            app:layout_constraintStart_toEndOf="@id/twitter_icon"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/esidemsam"
+            android:textSize="15sp"
+            android:textColor="@color/goodgrey"
+            android:fontFamily="@font/roboto"
+            android:layout_marginStart="20dp" />
+        <ImageView
+            android:id="@+id/linked_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@id/twitter_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/linkedin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/twitter_icon"
+            app:layout_constraintStart_toEndOf="@id/linked_icon"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/esidem"
+            android:textSize="15sp"
+            android:textColor="@color/goodgrey"
+            android:fontFamily="@font/roboto"
+            android:layout_marginStart="20dp" />
+
+        <ImageView
+            android:id="@+id/fb_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@id/linked_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/facebook" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/linked_icon"
+            app:layout_constraintStart_toEndOf="@id/fb_icon"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/esidem"
+            android:textSize="15sp"
+            android:textColor="@color/goodgrey"
+            android:fontFamily="@font/roboto"
+            android:layout_marginStart="20dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -277,7 +342,7 @@
             android:layout_marginTop="10dp"
             app:layout_constraintTop_toBottomOf="@id/skills"
             app:layout_constraintStart_toEndOf="@id/skill_icon"
-            android:text="Android Developer"
+            android:text="@string/android_developer"
             android:textSize="15sp"
             android:layout_marginStart="20dp" />
 
@@ -297,7 +362,7 @@
             android:layout_marginTop="10dp"
             app:layout_constraintTop_toBottomOf="@id/skill_icon"
             app:layout_constraintStart_toEndOf="@id/skill_icon_2"
-            android:text="Program Manager"
+            android:text="@string/program_manager"
             android:textSize="15sp"
             android:layout_marginStart="20dp" />
 
@@ -317,7 +382,7 @@
             app:layout_constraintTop_toBottomOf="@id/skill_icon_2"
             app:layout_constraintStart_toEndOf="@id/skill_icom_3"
             android:layout_marginLeft="20dp"
-            android:text="Community Builder"
+            android:text="@string/community_builder"
             android:textSize="15sp"
             android:layout_marginStart="20dp" />
 
@@ -338,7 +403,7 @@
             android:layout_marginTop="10dp"
             app:layout_constraintTop_toBottomOf="@id/skill_icom_3"
             app:layout_constraintStart_toEndOf="@id/skill_con_4"
-            android:text="Photographer"
+            android:text="@string/photographer"
             android:textSize="15sp"
             android:layout_marginStart="20dp" />
 

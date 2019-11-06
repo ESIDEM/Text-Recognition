@@ -10,5 +10,19 @@ My technical skills includes: Java, XML, Android, Material Design, Firebase, SQL
     <string name="skills">Skills</string>
     <string name="ratings">Star Ratings</string>
     <string name="samplereview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium bibendum sapien, ut euismod massa. Duis convallis sem sed turpis elementum auctor.</string>
+    <string name="point_the_camera_to_your_image">Point the camera to your image</string>
+    <string name="processed_text_here">Processed text here!!</string>
+    <string name="sam_esidem">Sam Esidem</string>
+    <string name="android_developer">Android Developer</string>
+    <string name="developer_s_info">Developer\'s Info</string>
+    <string name="_2348061304970">2348061304970</string>
+    <string name="samesidem_gmail_com">samesidem@gmail.com</string>
+    <string name="uyo_nigeria">Uyo, Nigeria</string>
+    <string name="android_developer">Android Developer</string>
+    <string name="program_manager">Program Manager</string>
+    <string name="community_builder">Community Builder</string>
+    <string name="photographer">Photographer</string>
+    <string name="esidemsam">\@Esidemsam</string>
+    <string name="esidem">\@Esidem</string>
 
 </resources>

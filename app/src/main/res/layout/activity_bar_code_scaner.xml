@@ -46,7 +46,7 @@
         android:fontFamily="@font/roboto"
         app:layout_constraintTop_toBottomOf="@id/z_xing_scanner"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="Point the camera to your image"/>
+        android:text="@string/point_the_camera_to_your_image"/>
     <View
         android:id="@+id/line"
         android:layout_width="match_parent"
